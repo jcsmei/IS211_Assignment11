@@ -12,7 +12,7 @@ todo_list = []
 
 @app.route('/')
 def index():
-    return render_template('index.html', todos=todo_list)
+    return render_template('main.html', todos=todo_list)
                            
 @app.route('/submit', methods=['POST'])
 def submit():
